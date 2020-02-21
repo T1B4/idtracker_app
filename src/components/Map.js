@@ -22,7 +22,7 @@ export default class Map extends Component {
       time: this.props.time,
       latDelta: 0.09,
       longDelta: 0.04,
-      zoomLevel: 16,
+      zoomLevel: 0,
       panico: this.props.navigation.getParam('panico'),
       ignicao: this.props.navigation.getParam('ignicao'),
       tracker: this.props.navigation.getParam('tracker'),
@@ -51,6 +51,7 @@ export default class Map extends Component {
           style={styles.map}
           loadingEnabled={true}
           minZoomLevel={this.state.zoomLevel}
+          maxZoomLevel={20}
           showsUserLocation={true}
           showsMyLocationButton={true}
           region={{

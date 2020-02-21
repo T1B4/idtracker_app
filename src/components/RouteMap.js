@@ -69,6 +69,7 @@ export default class RouteMap extends Component {
           loadingIndicatorColor={'#FFF'}
           loadingBackgroundColor={'slateblue'}
           minZoomLevel={this.state.zoomLevel}
+          maxZoomLevel={20}
           region={{
             latitude: parseFloat(this.state.rota[0].lat),
             longitude: parseFloat(this.state.rota[0].lon),
